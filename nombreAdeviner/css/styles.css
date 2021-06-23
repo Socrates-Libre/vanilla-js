@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../images/chiffres.png");
+}
+
+header {
+  width: 50vw;
+  height: 250px;
+  margin: auto;
+  background: #e0e0e0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  padding-top: 100px;
+  font-family: 'Luckiest Guy';
+  font-size: 4.6em;
+  color: #1E90FF;
+  text-shadow: 1px 1px 1px #fff;
+  background: url("../images/autre.png");
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  font-size: 24px;
+}
+
+header p {
+  padding: 10px 25px 25px;
+  background-color: #fdfdfd;
+}
+
+form {
+  margin-top: 55px;
+  height: 180px;
+  background-color: #909090;
+  padding: 10px 50px;
+  border-radius: 5px;
+  border: #3030EF solid 2px;
+  position: relative;
+}
+
+#button {
+  margin: 25px 0 0 25px;
+  height: 85px;
+  background-color: #1E90FF;
+  border-radius: 40px;
+  border: 2px solid blue;
+  color: #FFFFF0;
+  box-shadow: 2px 2px 5px #0000a0;
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+}
+
+.ok {
+  width: 85px;
+}
+
+.rejouer {
+  width: 175px;
+}
+
+form input {
+  width: 125px;
+  height: 65px;
+  padding: 10px 0px 10px 35px;
+  margin: 25px 0 0 0;
+  font-family: 'Lobster', cursive;
+  font-size: 60px;
+  font-weight: bold;
+  color: #2A2AFA;
+  text-shadow: 2px 3px 0px #fff;
+  display: block;
+  float: left;
+  background-image: url("../images/autre.png");
+  background-color: white;
+}
+
+#conteneur {
+  width: 50vw;
+  height: calc(100vh - 250px);
+  margin: auto;
+  background: url("../images/10.png");
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+
+}
+
+#white {
+  width: 50vw;
+  height: calc(100vh - 250px);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+#Jeu {
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#analyse {
+  width: 260px;
+  margin-top: 15px;
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: 1px #000000 solid;
+  background-color: white;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+}
+
+#retours {
+  width: 95%;
+  margin: 15px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  font-size: 25px;
+}
+
+.clear {
+  clear: left;
+}
+.chance {
+  color: #a00000;
+  font-weight: 400;
+}
+
+#propositions {
+  font-family: 'Roboto Mono', monospace;
+  color: #3030aa;
+  font-size: 30px;
+}
+
+#commentaires {
+  text-align: center;
+}
+
+.visible {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+.green, .orange, .red {
+  color: white;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.red {
+  background-color: red;
+}

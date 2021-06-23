@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jeu : Deviner un nombre</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" /><link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Montserrat|Lobster|Roboto+Mono">
+  </head>
+  <body>
+    <header>
+      <h1>Devinez un nombre :</h1>
+      <p>Un nombre entre 1 et 100 a été généré de manière aléatoire par le programme.<br />
+      Vous devez le devinez en 10 essais maximum.<br />
+      Le programme vous dira si votre proposition est plus grande ou plus petite que le nombre à deviner.<br />
+      <span class="chance">Bonne chance !</span></p>
+    </header>
+    <div id="conteneur">
+      <div id="white"></div>
+        <form>
+          <div id="jeu">
+            <input id="nombre" type="number" min="1" max="100" /><button id="button">Ok</button>
+            <div class="clear"></div>
+          </div>
+          <div id="analyse">
+            <h2 id="essais"></h2>
+            <p id="saisie"></p>
+            <p id="propositions"></p>
+          </div>
+          <div class="clear"></div>
+        </form>
+        <div id="retours" class="hidden">
+          <p id="commentaires"></p>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/jeu.js"></script>
+  </body>
+</html>

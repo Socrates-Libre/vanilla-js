@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quizz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="top">Quizz de Culture Générale</h1>
+    <header id="sauvegarde">
+    </header>
+    <div id="popup" class="hidden"><span class='clignote'>Erreur!</span> Vous n'avez choisi aucune de vos réponses.<a href="#top" onclick="fermer()">X</a></div>
+    <form id="root">
+    </form>
+    <div id="check">
+      <button type="button" id="button"></button>
+      <p id="results"></p>
+      <a href="#top">TOP</a>
+    </div>
+    <script src="scripts/quizz.js" charset="utf-8"></script>
+  </body>
+</html>

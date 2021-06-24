@@ -1,4 +1,4 @@
-* { margin: 0; padding: 0; box-sizing: auto; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
 
@@ -15,11 +15,16 @@ form {
 
 #inputLabel { text-align: center; flex-grow: 1; padding: 10px 0 0; }
 
-#input { font-size: 18px; margin-right: 10px; flex-grow: 2; border: 2px solid #aeaefe; border-radius: 3px; }
-
-#button { flex-grow: 1; padding: 5px;
+#input { background: #dedede; font-size: 18px; margin-right: 10px; flex-grow: 2; border: 2px solid #aeaefe; border-radius: 3px;  padding: 3px; }
+#input:focus, #input:active { background: white; border: 3px solid blue; outline: none; }
+button {
+  padding: 5px;
   background: blue;
   color: #aeaefe; border-radius: 3px; border: 1px solid #0000aa; font-size: 18px;
+}
+
+#button {
+   flex-grow: 1;
 }
 
 #button:hover {
@@ -37,7 +42,7 @@ ul { background: #defdef;}
 .menu { width: calc(100vw = 30px); font-size: 1em; padding: 10px 0 0 0 300px; }
 .menu li a {text-decoration: none; color: grey; }
 .menu li a:hover { color: blue; }
-.todo {width: 50vw; margin: 10px auto; padding: 50px; }
+.todo {width: 50vw; margin: auto; padding: 50px; }
 
 li {
   list-style-type: none;
@@ -46,9 +51,10 @@ li {
   padding: 10px; margin: 2px;
   color: grey;
 }
-.menuLi { min-width: calc(25vw - 96px); background: white, border: 1px solid #bcdbcd; text-align: center; }
+.menuLi { display: inline-block; min-width: calc(25vw - 150px); background: white, border: 1px solid #bcdbcd; text-align: center; }
 
 .taskLi {
+  display: block; min-width: 60%; margin: 2px auto;
   background: linear-gradient(0deg, rgba(244, 244, 244, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(244, 244, 244, 1) 100%);
   border: 1px solid #defdef; border-radius: 5px; font-size: 1.5em;
 }
@@ -58,22 +64,29 @@ li {
   border: 1px solid #abcabc; border-radius: 7px;}
 
 .disabled {
+  display: block; min-width: 60%; margin: 2px auto;
   background: linear-gradient(0deg, rgba(200, 200, 200, 1) 0%, rgba(233, 233, 233, 1) 50%, rgba(200, 200, 200, 1) 100%);
   border: 1px solid #321321; border-radius: 5px; font-size: 1.5em; }
 
 .task { margin-right: 1em; }
 
-#validation { display: flex; justify-content: center; }
+#sub { margin-bottom: 50px; }
 
-#Valider { }
+#sub p {
+  width: 50vw; margin: 10px auto 0; padding: 10px; background: #defdef;
+}
 
+#validation { position: fixed; bottom: 0; left: 0;
+  width:100vw; padding: 10px 0 10px 0; background: white; border-top: 2px black solid;
+  display: flex; justify-content: center; flex-wrap: wrap}
 
+#Valider { flex-grow: 0; max-width: 150px; }
 
 #popup {
-  width: calc(50vw - 100px);
+  width: calc(60vw - 100px);
   position: fixed;
   top: 2vh;
-  left: 25vw;
+  left: 20vw;
   background-color: #000;
   color: #F4F5D2;
   font-size: 1.2em;
@@ -81,6 +94,13 @@ li {
   border-radius: 10px;
   padding: 50px;
 }
+
+#popup input, #popup button {
+  margin-right: 5px;
+}
+
+#popup input { display: inline-block; padding: 5px; outline: none; border-radius: 3px; border: 2px solid black; }
+#popup input:focus {border: 2px solid blue; }
 
 .visible {
   box-shadow: 0px 16px 16px -6px rgba(67, 46, 38, 0.9);
@@ -109,31 +129,3 @@ li {
 }
 
 .done { margin-left: 15px;}
-
-#popup a {
-  display: block;
-  width:30px;
-  height: 30px;
-  border: 1px solid white;
-  text-decoration: none;
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border-radius: 12px;
-  transform: rotate(0deg);
-  text-align: center;
-  font-family: 'Flamenco', monospace;
-  font-size: 30px;
-  font-weight: lighter;
-  padding: 0;
-  margin: 0;
-}
-
-#popup a:hover {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  transform: rotate(360deg);
-}

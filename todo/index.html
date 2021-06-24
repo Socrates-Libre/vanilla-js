@@ -30,15 +30,19 @@
             Entrez une tâche :
           </label>
           <input type="text" id="input" name="input" required>
-          <button type="submit" id="button">créer</button>
+          <button type="button" id="button">créer</button>
         </div>
       </form>
       <div id="sub">
-        <ul class="todo">
-          <li class="taskLi"><input type="checkbox" class="task" value="Apprendre le Javascript">Apprendre le JavaScript !</li>
+        <p>TODO:</p>
+        <ul class="todo" id="todolist">
+          <li id="start" class="taskLi">Créer une tâche ci-dessus.</li>
+        </ul>
+        <p>DONE!</p>
+        <ul class="todo" id="done">
         </ul>
         <div id="validation">
-          <button type="button" id="valider">Valider</button>
+          <button type="button" id="valider">Archiver Tâches Faites</button>
         </div>
       </div>
     </div>

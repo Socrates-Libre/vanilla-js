@@ -9,7 +9,7 @@
 - pour utiliser les chaînes de caractères.
 - pour utiliser les Arrays.
 - pour utiliser les sélecteurs.
-- pour utliser les fonctions.
+- pour utiliser les fonctions.
 - pour utiliser les maths.
 - pour utiliser les opérateurs.
 - pour utiliser les conditions.

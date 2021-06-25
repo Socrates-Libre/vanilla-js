@@ -1,35 +1,20 @@
+/*
+========= sélecteurs de balises  ===================
+*/
+
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
 
 body { font-family: sans-serif; font-size: 1em; }
 
-form {
-  width: 100vw;
-}
+form { width: 100vw; }
 
-#formulaire {
-  width: calc(60% - 2em); margin: auto; padding: 1em; border: 1px solid #abcabc; min-height: 20px;
-  color: #654654; display: flex; justify-content: center; border-radius: 2px;
-}
-
-#inputLabel { text-align: center; flex-grow: 1; padding: 10px 0 0; }
-
-#input { background: #dedede; font-size: 18px; margin-right: 10px; flex-grow: 2; border: 2px solid #aeaefe; border-radius: 3px;  padding: 3px; }
-#input:focus, #input:active { background: white; border: 3px solid blue; outline: none; }
 button {
   padding: 5px;
   background: blue;
   color: #aeaefe; border-radius: 3px; border: 1px solid #0000aa; font-size: 18px;
-}
-
-#button {
-   flex-grow: 1;
-}
-
-#button:hover {
-  background: linear-gradient(0deg, rgba(115,101,255,1) 0%, rgba(165, 151, 255, 1) 50%, rgba(115,101,255,1) 100%, );
-  border: 1px solid #blue; color: white;
 }
 
 h1 { text-align: center; color: #654654;
@@ -51,24 +36,30 @@ li {
   padding: 10px; margin: 2px;
   color: grey;
 }
-.menuLi { display: inline-block; min-width: calc(25vw - 150px); background: white, border: 1px solid #bcdbcd; text-align: center; }
 
-.taskLi {
-  display: block; min-width: 60%; margin: 2px auto;
-  background: linear-gradient(0deg, rgba(244, 244, 244, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(244, 244, 244, 1) 100%);
-  border: 1px solid #defdef; border-radius: 5px; font-size: 1.5em;
+/*
+========= sélecteurs d'id  ===================
+*/
+
+#formulaire {
+  width: calc(60% - 2em); margin: auto; padding: 1em; border: 1px solid #abcabc; min-height: 20px;
+  color: #654654; display: flex; justify-content: center; border-radius: 2px;
 }
 
-.taskLi:hover { color: #321321;
-  background: linear-gradient(0deg, rgba(233, 233, 233, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(233, 233, 233, 1) 100%);
-  border: 1px solid #abcabc; border-radius: 7px;}
+#inputLabel { text-align: center; flex-grow: 1; padding: 10px 0 0; }
 
-.disabled {
-  display: block; min-width: 60%; margin: 2px auto;
-  background: linear-gradient(0deg, rgba(200, 200, 200, 1) 0%, rgba(233, 233, 233, 1) 50%, rgba(200, 200, 200, 1) 100%);
-  border: 1px solid #321321; border-radius: 5px; font-size: 1.5em; }
+#input { background: #dedede; font-size: 18px; margin-right: 10px; flex-grow: 2; border: 2px solid #aeaefe; border-radius: 3px;  padding: 3px; }
+#input:focus, #input:active { background: white; border: 3px solid blue; outline: none; }
 
-.task { margin-right: 1em; }
+
+#button {
+   flex-grow: 1;
+}
+
+#button:hover {
+  background: linear-gradient(0deg, rgba(115,101,255,1) 0%, rgba(165, 151, 255, 1) 50%, rgba(115,101,255,1) 100%, );
+  border: 1px solid #blue; color: white;
+}
 
 #sub { margin-bottom: 50px; }
 
@@ -101,6 +92,30 @@ li {
 
 #popup input { display: inline-block; padding: 5px; outline: none; border-radius: 3px; border: 2px solid black; }
 #popup input:focus {border: 2px solid blue; }
+
+
+/*
+========= sélecteurs de classes  ===================
+*/
+
+.menuLi { display: inline-block; min-width: calc(25vw - 150px); background: white, border: 1px solid #bcdbcd; text-align: center; }
+
+.taskLi {
+  display: block; min-width: 60%; margin: 2px auto;
+  background: linear-gradient(0deg, rgba(244, 244, 244, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(244, 244, 244, 1) 100%);
+  border: 1px solid #defdef; border-radius: 5px; font-size: 1.5em;
+}
+
+.taskLi:hover { color: #321321;
+  background: linear-gradient(0deg, rgba(233, 233, 233, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(233, 233, 233, 1) 100%);
+  border: 1px solid #abcabc; border-radius: 7px;}
+
+.disabled {
+  display: block; min-width: 60%; margin: 2px auto;
+  background: linear-gradient(0deg, rgba(200, 200, 200, 1) 0%, rgba(233, 233, 233, 1) 50%, rgba(200, 200, 200, 1) 100%);
+  border: 1px solid #321321; border-radius: 5px; font-size: 1.5em; }
+
+.task { margin-right: 1em; }
 
 .visible {
   box-shadow: 0px 16px 16px -6px rgba(67, 46, 38, 0.9);

@@ -34,4 +34,4 @@
 - pour utiliser les linear-gradients avec rgba(r, g, b, a) x%.
 - pour personnaliser le style des champs, des boutons et des li.
 - pour animer les apparitions/disparitions de fenêtres pop-up avec les transitions.
-  (voir classes ‘.visible{...}’ et ’.hidden{...}’)
+  (voir classes `.visible{...}` et `.hidden{...}`)

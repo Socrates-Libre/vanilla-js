@@ -35,3 +35,18 @@
 - pour personnaliser le style des champs, des boutons et des li.
 - pour animer les apparitions/disparitions de fenêtres pop-up avec les transitions.
   (voir classes `.visible{...}` et `.hidden{...}`)
+
+### Les points-fort du Projet :
+
+- on crée dynamiquement des éléments html avec le Javascript.
+- on enlève dynamiquement des éléments html avec le Javascript.
+
+### Les points à améliorer :
+
+- passer plusieurs tâches dans la div "DONE!" en même temps.
+- afficher les pop-ups de la fonction `messageAlert(message)`.
+- mettre les tâches à faire et faites sur deux colonnes.
+
+### Les points à développer :
+
+- utiliser le drag-n-drop pour hiérarchiser les tâches.

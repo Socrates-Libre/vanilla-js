@@ -16,7 +16,10 @@ button.addEventListener("click", creer);
 let checkboxes = document.getElementsByTagName('input');
 
 function finir() {
-  for (var i = 0; i < checkboxes.length; i++) {
+
+  console.log(checkboxes);
+
+  for (var i = (checkboxes.length - 1); i > 0; i--) {
 
     if (checkboxes[i].getAttribute("type") === "checkbox" && checkboxes[i].checked) {
       checkboxes[i].disabled = true;
@@ -28,6 +31,9 @@ function finir() {
       li.classList.add('disabled');
 
       let garbage = ul.removeChild(li);
+
+      console.log(garbage);
+
       getid("done").appendChild(garbage);
     }
   }

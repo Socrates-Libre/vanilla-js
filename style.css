@@ -104,3 +104,36 @@ footer p {
 footer p span {
      color: red;
 }
+
+/* class selectors styles*/
+
+.container {
+    width: 900px;
+    margin: auto;
+}
+
+.headers {
+    width: calc(100% - 50px);
+    background-color: red;
+    color: whitesmoke;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom:  10px;
+    margin-top: 5px;
+}
+
+.images {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* ID selectors styles */
+
+#four_O_faur {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
